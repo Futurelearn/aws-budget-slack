@@ -67,7 +67,3 @@ end
 def budget_name
   ENV['BUDGET_NAME'] || 'Monthly Total AWS Budget'
 end
-
-def client
-  Aws::Budgets::Client.new(account_id: account_id, )
-end
